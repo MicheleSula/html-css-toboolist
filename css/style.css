@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,13 +32,14 @@ header {
     width: 70%;
     margin: 0 auto;
     background-color: white;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 5px 5px;
+    
 }
 
 /* Upper part of container */
 .upper {
     height: 70px;
-    border-bottom: 5px solid #f6f8f9;
+    border-bottom: 3px solid #f6f8f9;
     line-height: 70px;
 }
 
@@ -66,6 +68,7 @@ header {
 .bottom {
     padding-left: 50px;
     padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 ul {
@@ -76,6 +79,7 @@ ul {
 .blocco-elementi {
     margin-bottom: 50px;
 }
+
 ul li h2::before{
     content: '\25BE';
 }
@@ -89,9 +93,11 @@ h2 {
 li {
     font-weight: normal;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
+
+/* Check-boxes before the task */
 li .circle::before{
     display: inline-block;
     width: 12px;
@@ -110,6 +116,14 @@ li .circle.check::before{
     color:rgb(36, 228, 36) ;
 }
 
+li .circle.unchecked::before{
+    content: '\2715';
+    border: 1px solid rgb(223, 20, 20);
+    color:rgb(223, 20, 20);
+}
+
+
+/* Tags after the description of the task */
 .etichetta {
     padding: 6px 12px 6px 12px;
     border-radius: 10px;
@@ -123,4 +137,20 @@ li .circle.check::before{
 
 .etichetta.goals {
     background-color: rgb(190, 16, 190);
+}
+
+.etichetta.recruiting {
+    background-color: rgb(16, 202, 131);
+}
+
+.etichetta.mobile {
+    background-color: rgb(236, 158, 14);
+}
+
+.etichetta.website {
+    background-color: rgb(230, 53, 162);
+}
+
+.etichetta.sales {
+    background-color: rgb(154, 209, 72);
 }
