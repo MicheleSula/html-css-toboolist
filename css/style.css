@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: white;
+}
+
+#logo {
+    vertical-align: middle;
+    padding: 10px 10px 10px 10px;
+}
+#logo-text {
+    vertical-align: middle;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
